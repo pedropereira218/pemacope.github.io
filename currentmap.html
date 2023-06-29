@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Current Disasters Map</title>
+
+	<!-- Leaflet CSS -->
+	<link rel="stylesheet" href="leaflet/leaflet.css">
+	<!-- Leaflet javascript -->
+	<script src="leaflet/leaflet.js"></script>
+	
+	<!--External link to page's CSS-->
+	<link rel="stylesheet" href="css/currentmap.css">
+</head>
+<body onload="reliefWeb();">
+	<div id="map"></div>
+
+	<div id="disasterModal" class="modal">
+		<div class="modal-content">
+			<span class="close" onclick="closeModal();">&times;</span>
+			<p id="disasterInfo"></p>
+		</div>
+	</div>
+
+
+	<!--External link to page's JS-->
+	<script type="text/javascript" src="js/countries.js"></script>
+	<script type="text/javascript" src="js/currentmap.js"></script>
+</body>
+</html>
